@@ -1,0 +1,26 @@
+/***MEASURES***/
+$unit: 20px;
+
+/***COLORS***/
+$cube-color: mistyrose;
+$pyramid-color: blue;
+
+/***STYLES***/
+html{
+  height: 100%;  
+}
+
+body{
+	background:  linear-gradient( rgba(0, 40, 210, 0.77) 0%, #354CE2 100%);
+	box-sizing: border-box;
+	position: relative;
+}
+
+.pencil{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateY($unit * 20)  rotateY(0deg) rotateX(0deg) rotateZ(165deg);
+	transform-style: preserve-3d;
+	animation: rotate-pencil 5s linear infinite;
+}
